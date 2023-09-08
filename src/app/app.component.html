@@ -10,7 +10,13 @@
   <h1>{{titulo}}</h1><!--{{}} la llaves dobles es interpolacion que llama a una variable en ts-->
   <button (click)="cambiarTitulo('Nuevo titulo')">Cambiar titulo</button>
   <button (click)="cambiarTitulo('Nuevo titulo 2')">Cambiar titulo 2</button>
-  <button (click)="cambiarTitulo('Nuevo titulo 3')">Cambiar titulo 3</button>
+  <button (click)="cambiarTitulo('Nuevo titulo 3')">Cambiar titulo 3</button><br>
+  <input [(ngModel)]="variableInput">
+  <p>{{variableInput}}</p>
+  <input type="number"[(ngModel)]="numero1"/>
+  <input type="number"[(ngModel)]="numero2"/>
+  <button (click)="sumar()">Sumar</button>
+  <h2>{{resultado}}</h2>
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
