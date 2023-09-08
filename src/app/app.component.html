@@ -7,7 +7,10 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
-  <h1>Primera aplicacion de angular corriendo</h1>
+  <h1>{{titulo}}</h1><!--{{}} la llaves dobles es interpolacion que llama a una variable en ts-->
+  <button (click)="cambiarTitulo('Nuevo titulo')">Cambiar titulo</button>
+  <button (click)="cambiarTitulo('Nuevo titulo 2')">Cambiar titulo 2</button>
+  <button (click)="cambiarTitulo('Nuevo titulo 3')">Cambiar titulo 3</button>
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

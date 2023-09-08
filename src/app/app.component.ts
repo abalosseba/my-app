@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  titulo="LLamado Variable interpolacion"
+
+  cambiarTitulo(tituloNuevo: any){
+    this.titulo = tituloNuevo;
+  }
 }
